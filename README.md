@@ -21,24 +21,31 @@ Sekarang, mari kita bahas widget yang saya gunakan dalam kode Flutter saya:
    - Ini berfungsi untuk menampilkan judul aplikasi dan grid layout yang berisi daftar item.
 
 2. `ShopItem` (Model Class):
-   - Ini adalah kelas model untuk merepresentasikan item toko.
+   - Ini adalah kelas model untuk merepresentasikan item.
    - Atribut yangg digunakan adalah nama item dan ikon dalam daftar item.
 
 3. `ShopCard` (Stateless Widget):
-   - Saya menggunakan widget ini untuk membuat tampilan kartu untuk setiap item toko.
-   - Saya membungkus item toko dalam `Material` dan menggabungkan ikon dan teks.
+   - Widget ini digunakan untuk membuat tampilan card untuk setiap item.
 
 4. `Material`:
-   - Saya menggunakan widget ini untuk memberikan latar belakang berwarna pada setiap kartu.
+   - Widget ini digunakan untuk memberikan background color pada setiap card.
 
 5. `InkWell`:
-   - `InkWell` berfungsi untuk membuat area responsif terhadap sentuhan yang menampilkan Snackbar saat kartu diklik.
+   - `InkWell` berfungsi untuk membuat area responsif terhadap sentuhan yang menampilkan Snackbar saat card diklik.
 
 6. `GridView`:
-   - Widget ini saya gunakan untuk membuat tata letak grid yang menampilkan daftar item toko.
+   - Widget ini digunakan untuk membuat tata letak grid yang menampilkan daftar item.
 
 7. `Scaffold`:
-   - Saya menggunakan `Scaffold` sebagai kerangka utama aplikasi dengan `AppBar` dan tampilan badan.
+   - Widget `Scaffold` digunakan sebagai kerangka utama aplikasi dengan `AppBar` dan tampilan badan.
 
 8. `AppBar`:
-   - Saya menggunakan `AppBar` untuk menampilkan AppBar di bagian atas halaman dengan judul aplikasi.
+   - Widget `AppBar` berfungsi untuk menampilkan AppBar di bagian atas halaman dengan judul aplikasi.
+
+## Step By Step Mengerjakan Tugas
+1. Membuat project tedskinventory menggunakan command `flutter create`.
+2. Kemudian pada directory buat file menu.dart kemudiann kita hapus beberapa line bawaan dari main.dart dan kita pindahkan ke menu.dart
+3. Kemudian kita ubah widget di menu.dart menjadi stateless
+4. Kemudian kita implementasikan widget widget yang diperlukan dengan style yang diinginkan
+5. Kemudian kita lihat hasilnya menggunakan `flutter run`
+6. Jika hasil sudah sesuai dengan keinginan kita dapat push ke github dengan git add, commit, push
