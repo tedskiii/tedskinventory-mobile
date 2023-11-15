@@ -48,4 +48,8 @@ Sekarang, mari kita bahas widget yang saya gunakan dalam kode Flutter saya:
 3. Kemudian kita ubah widget di menu.dart menjadi stateless
 4. Kemudian kita implementasikan widget widget yang diperlukan dengan style yang diinginkan
 5. Kemudian kita lihat hasilnya menggunakan `flutter run`
+<<<<<<< HEAD
 6. Jika hasil sudah sesuai dengan keinginan kita dapat push ke github dengan git add, commit, push
+=======
+6. Jika hasil sudah sesuai dengan keinginan kita dapat push ke github dengan git add, commit, push
+>>>>>>> fbe58399e115753b98273d2209b8f39961b30bb6
