@@ -106,29 +106,7 @@ class _ShopFormPageState extends State<ShopFormPage> {
                   },
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    hintText: "Deskripsi",
-                    labelText: "Deskripsi",
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(5.0),
-                    ),
-                  ),
-                  onChanged: (String? value) {
-                    setState(() {
-                      _description = value!;
-                    });
-                  },
-                  validator: (String? value) {
-                    if (value == null || value.isEmpty) {
-                      return "Deskripsi tidak boleh kosong!";
-                    }
-                    return null;
-                  },
-                ),
-              ),
+              
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Padding(
