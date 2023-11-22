@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tedskinventory/screens/menu.dart';
 import 'package:tedskinventory/screens/shoplist_form.dart';
+import 'package:tedskinventory/screens/list_product.dart';
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -17,7 +18,7 @@ class LeftDrawer extends StatelessWidget {
             child: Column(
               children: [
                 Text(
-                  'tedskinventory',
+                  'Shopping List',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontSize: 30,
@@ -26,7 +27,7 @@ class LeftDrawer extends StatelessWidget {
                   ),
                 ),
                 Padding(padding: EdgeInsets.all(10)),
-                Text("Simpan Barang Barang Pentingmu disini!",
+                Text("Catat seluruh keperluan belanjamu di sini!",
                     // TODO: Tambahkan gaya teks dengan center alignment, font ukuran 15, warna putih, dan weight biasa
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -51,8 +52,8 @@ class LeftDrawer extends StatelessWidget {
           },
         ),
         ListTile(
-          leading: const Icon(Icons.assignment_returned_outlined),
-          title: const Text('Simpan Barang'),
+          leading: const Icon(Icons.add_shopping_cart),
+          title: const Text('Tambah Produk'),
           // Bagian redirection ke ShopFormPage
           onTap: () {
             Navigator.pushReplacement(
@@ -61,6 +62,17 @@ class LeftDrawer extends StatelessWidget {
                   builder: (context) => const ShopFormPage(),
                 ));
           },
+        ),
+        ListTile(
+            leading: const Icon(Icons.shopping_basket),
+            title: const Text('Daftar Produk'),
+            onTap: () {
+                // Route menu ke halaman produk
+                Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProductPage()),
+                );
+            },
         ),
         ],
       ),

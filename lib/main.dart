@@ -1,19 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:tedskinventory/screens/menu.dart';
+import 'package:provider/provider.dart';
+import 'package:pbp_django_auth/pbp_django_auth.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+    const MyApp({Key? key}) : super(key: key);
 
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
+    @override
+    Widget build(BuildContext context) {
+        return Provider(
+            create: (_) {
+                CookieRequest request = CookieRequest();
+                return request;
+            },
+            child: MaterialApp(
+                title: 'Flutter App',
+                theme: ThemeData(
         // This is the theme of your application.
         //
         // TRY THIS: Try running your application with "flutter run". You'll see
@@ -36,6 +42,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: MyHomePage(),
+    )
     );
   }
 }
