@@ -106,7 +106,32 @@ class _ShopFormPageState extends State<ShopFormPage> {
                   },
                 ),
               ),
-              
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    hintText: "Jumlah Produk",
+                    labelText: "Jumlah Produk",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                    ),
+                  ),
+                  onChanged: (String? value) {
+                    setState(() {
+                      _amount = int.parse(value!);
+                    });
+                  },
+                  validator: (String? value) {
+                    if (value == null || value.isEmpty) {
+                      return "Jumlah Produk tidak boleh kosong!";
+                    }
+                    if (int.tryParse(value) == null) {
+                      return "Jumlah Produk harus berupa angka!";
+                    }
+                    return null;
+                  },
+                ),
+              ),
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Padding(

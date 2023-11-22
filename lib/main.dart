@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tedskinventory/screens/login.dart';
 import 'package:tedskinventory/screens/menu.dart';
 import 'package:provider/provider.dart';
 import 'package:pbp_django_auth/pbp_django_auth.dart';
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Color(0xFFFD5A47)),
         useMaterial3: true,
       ),
-      home: MyHomePage(),
+      home: LoginPage(),
     )
     );
   }

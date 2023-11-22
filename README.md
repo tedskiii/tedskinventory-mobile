@@ -81,7 +81,6 @@ Pada tugas kali ini saya menggunakan **TextFormField** digunakan untuk menerima 
 ## Bagaimana penerapan clean architecture pada aplikasi Flutter?
 **Clean Architecture** adalah suatu pendekatan dalam pengembangan perangkat lunak yang memisahkan beberapa konsep dalam aplikasi sehingga perubahan pada satu bagian tidak akan berdampak pada bagian lainnya. Dalam konteks Flutter, clean architecture akan membantu kita untuk memisahkan kode untuk logika bisnis dengan kode yang berhubungan dengan platform seperti UI, manajemen state, dan sumber data eksternal. Penerapan clean architecture pada Flutter memerlukan perencanaan struktur proyek yang baik, pemisahan tugas antar-lapisan, dan pengelolaan dependensi yang efektif. Dengan menggunakan Clean Architecture, kode akan lebih bersih, modular, dan mudah diujikan. Hal ini memungkinkan fleksibilitas dalam mengganti atau memodifikasi satu lapisan tanpa mempengaruhi lapisan lainnya.
 
-
 </details>
 
 <details>
