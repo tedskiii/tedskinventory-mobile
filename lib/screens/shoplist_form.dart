@@ -13,6 +13,7 @@ class _ShopFormPageState extends State<ShopFormPage> {
   String _name = "";
   int _price = 0;
   String _description = "";
+  int _amount = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -77,6 +78,29 @@ class _ShopFormPageState extends State<ShopFormPage> {
                     }
                     if (int.tryParse(value) == null) {
                       return "Harga harus berupa angka!";
+                    }
+                    return null;
+                  },
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    hintText: "Deskripsi",
+                    labelText: "Deskripsi",
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(5.0),
+                    ),
+                  ),
+                  onChanged: (String? value) {
+                    setState(() {
+                      _description = value!;
+                    });
+                  },
+                  validator: (String? value) {
+                    if (value == null || value.isEmpty) {
+                      return "Deskripsi tidak boleh kosong!";
                     }
                     return null;
                   },
